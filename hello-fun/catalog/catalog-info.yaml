@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-fun
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=hello-fun"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
